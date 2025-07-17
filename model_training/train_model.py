@@ -40,7 +40,6 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
 # Simpan model dan scaler
-output_dir = '../sleep_dashboard'
 os.makedirs(output_dir, exist_ok=True)
 
 with open(os.path.join(output_dir, 'model_sleep.pkl'), 'wb') as f:
